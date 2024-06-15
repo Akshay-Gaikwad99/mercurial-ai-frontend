@@ -1,0 +1,165 @@
+.dates-section {
+    display: flex;
+    overflow-x: auto;
+    margin-top: 30px;
+}
+
+.dates-section>div {
+    padding: 30px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    margin-right: 10px;
+    font-weight: 800;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.fixed-add-medication-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+
+.mediPlanner-main-container {
+    margin-top: 70px;
+    height: calc(100vh - 70px);
+    width: 100%;
+    background-image: linear-gradient(#5868FF, #4A94FA);
+}
+
+
+.mediPlanner-date-main-container {
+    background-image: linear-gradient(#4A94FA, #5868FF);
+    height: 190px;
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+}
+
+.mediPlanner-date-main-container select {
+    height: 40px;
+    width: 170px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 0px 10px;
+}
+
+.date-showing-container {
+    border: none;
+    background-color: transparent;
+    color: white;
+    height: 60px;
+    width: calc(20% - 20px);
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    margin-right: 10px;
+}
+
+
+.selected {
+    background-image: linear-gradient(white, white);
+    color: #5868FF;
+}
+
+
+.todo-main-container {
+    width: 100%;
+    background-color: white;
+    height: calc(100vh - 240px);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+.text-container-medi {
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.no-med-text {
+    font-size: 1em;
+    color: black;
+}
+
+
+.fixed-add-medication-button button {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-image: linear-gradient(#5868FF, #4A94FA);
+    color: white;
+    border: none;
+    font-size: 28px;
+}
+
+
+.todo-inner-main-container-list {
+    padding: 20px 20px 0px 20px;
+}
+
+.todo-inner-container-list {
+    height: 150px;
+    width: 100%;
+    border-radius: 10px;
+    background-image: linear-gradient(#5868FF, #4A94FA);
+    padding: 10px;
+    align-items: center;
+    display: flex;
+}
+
+.todo-inner-container-list h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+}
+
+.todo-inner-container-list h5 {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+
+.todo-inner-container-list p {
+    font-size: 12px;
+    font-weight: 300;
+    color: white;
+}
+
+.mediPlaner-input-main-container {
+    padding: 20px;
+}
+
+.mediPlaner-input-main-container input {
+    height: 40px;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    margin: 10px 0;
+}
+
+.mediPlaner-input-main-container button {
+    height: 60px;
+    width: 100%;
+    font-size: 22px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+    background-image: linear-gradient(#4A94FA, #5868FF);
+    color: white;
+    font-weight: 700;
+}

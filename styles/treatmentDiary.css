@@ -1,0 +1,279 @@
+.treatmentDiary-main-container {
+  background: #f8fbff;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  align-items: center;
+  position: fixed;
+  z-index: 9999;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.treatmentDiary-back-button {
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.treatmentDiary_display_image_container {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: #f8fbff;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.treatmentDiary_display_image_container img {
+  height: 70%;
+  width: 70%;
+}
+
+.treatmentDiary_display_text_container h1 {
+  color: #11245b;
+  text-align: center;
+  font-family: "Inter", sans-serif !important;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.treatmentDiary-body-main-container {
+  background: #f8fbff;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  padding-top: 90px;
+}
+
+.treatment-diary-main-12 {
+  padding: 0%;
+}
+
+.add-task-div {
+  width: 48px;
+  height: 48px;
+  border-radius: 120px;
+  background: #11245b;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.add-task-div img {
+  width: 24px;
+  height: 24px;
+}
+
+.treatmentDiary-task-container {
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+  background: #ffdbac;
+  padding: 16px;
+  padding-bottom: 30px;
+  cursor: pointer;
+}
+.treatmentDiary-task-container.with-margin {
+  margin-top: 20px;
+}
+
+.treatmentDiary-task-text-container p {
+  color: #211b13;
+  font-family: "Inter", sans-serif !important;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.treatmentDiary-task-text-container p.truncate-text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+}
+
+.treatmentDiary-taskDate-text-container p {
+  color: #d67b00;
+  font-family: "Inter", sans-serif !important;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  float: right;
+  margin-bottom: 20px;
+}
+
+.popup-container {
+  position: fixed;
+  bottom: 150px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.popup-container {
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 300px;
+  width: 100%;
+  left: 50%;
+  border-radius: 8px;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.popup-content {
+  background: #f8fbff;
+  padding: 16px;
+  border-radius: 8px;
+  height: 300px;
+}
+
+.popup-content h2 {
+  color: #000;
+  font-family: "Inter", sans-serif !important;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.popup-input-date {
+  width: 100% !important;
+  height: 50px !important;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  border-radius: 12px;
+  border: 1px solid #c5c6cc;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  -webkit-appearance: none !important;
+}
+.register_dob_input{
+  width: 100% !important;
+  -webkit-appearance: none !important;
+}
+.popup-input-date::placeholder .popup-textarea-entry::placeholder {
+  color: #8f9098;
+  font-family: "Inter", sans-serif !important;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.popup-textarea-entry {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  border: 1px solid #c5c6cc;
+}
+
+.popup-button-save {
+  background-color: #214493;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  width: 100%;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.popup-button:hover {
+  background-color: #214493;
+}
+
+.fa-circle-xmark {
+  font-size: 24px;
+  margin-top: 10px;
+  color: #214493;
+}
+
+.single-entry-main-container {
+  padding: 16px;
+  width: auto;
+  border-radius: 10px;
+  height: auto;
+  max-height: calc(100vh - 115px);
+  background: #f8fbff;
+  padding-bottom: 30px;
+  overflow: auto;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: 1px solid lightgray;
+}
+
+.single-entry-main-container::-webkit-scrollbar {
+  display: none;
+}
+
+.single-entry-main-container h1 {
+  color: #d67b00;
+  text-align: left;
+  font-family: "Inter", sans-serif !important;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.single-entry-main-container p {
+  color: #11245b;
+  text-align: left;
+  font-family: "Inter", sans-serif !important;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.treatment_main_container_1 {
+  margin-top: 85px;
+  background-color: #e6efff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+
+
+
+
+

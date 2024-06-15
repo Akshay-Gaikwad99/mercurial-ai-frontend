@@ -1,0 +1,235 @@
+.homepage-main-container {
+  padding: 0px 5px;
+  height: 100vh;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  background-color: #f9faff;
+}
+
+.homepage-main-container::-webkit-scrollbar {
+  display: none;
+}
+
+.greet-container-homepage {
+  background-color: #11245a;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 18px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.wavingHand-container {
+  width: 48px;
+  height: 48px;
+  background-color: #253797;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+.wavingHand-text-container {
+  padding: 0 20px;
+}
+
+.wavingHand-text-container h1 {
+  color: #fff;
+  font-family: "Inter", sans-serif !important;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.wavingHand-text-container p {
+  color: #6d7cca;
+  font-family: "Inter", sans-serif !important;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+}
+
+.getStart-container-homepage {
+  height: 100px;
+  width: 100%;
+  background-image: linear-gradient(#fdba73, #e78823);
+  border-radius: 10px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.getStarted-text-container {
+  width: 200px;
+}
+
+.getStarted-text-container h1 {
+  color: #000;
+  font-family: "Inter", sans-serif !important;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.getStarted-text-container p {
+  color: #4f4b48;
+  font-family: "Inter", sans-serif !important;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  text-align: left;
+}
+
+.getStarted-button-container button {
+  border-radius: 8px;
+  background: #000;
+  display: flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 125px;
+  border: none;
+  color: white;
+  font-size: 14px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.utilities-container-homepage {
+  margin-top: 30px;
+}
+
+.utilities-container-homepage h2 {
+  color: #1f2024;
+  font-family: "Inter", sans-serif !important;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.utilities-inner-container h3 {
+  color: #1f2024;
+  text-align: center;
+  font-family: "Inter", sans-serif !important;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 10px;
+}
+
+.utilities-inner-container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.inner-image-utilities-container-1 {
+  margin-left: 20px;
+}
+
+.recommendation-main-container-homepage {
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 4px 4px 32px 0px rgba(0, 0, 0, 0.08);
+  padding: 12px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.recommendation-inner-text-container {
+  padding: 8px 8px 8px 16px;
+}
+
+.recommendation-inner-text-container h1 {
+  color: #1f2024;
+  font-family: "Inter", sans-serif !important;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: left;
+}
+
+.recommendation-inner-text-container p {
+  color: #494a50;
+  font-family: "Inter", sans-serif !important;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+}
+
+.treatment-main-container-homepage {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 4px 4px 32px 0px rgba(0, 0, 0, 0.08);
+  padding: 12px;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 200px;
+}
+
+.treatment-inner-text-container {
+  padding: 8px;
+}
+
+.treatment-inner-text-container h1 {
+  color: #1f2024;
+  font-family: "Inter", sans-serif !important;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.treatment-inner-text-container p {
+  color: #494a50;
+  font-family: "Inter", sans-serif !important;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+}
+
+
+
+.recommendation-inner-image-container-1 {
+  width: 152px;
+  height: 152px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recommendation-image {
+  width: 152px;
+  height: 100%;
+  cursor: pointer;
+  border-radius: 20px;
+  object-fit: cover;
+}

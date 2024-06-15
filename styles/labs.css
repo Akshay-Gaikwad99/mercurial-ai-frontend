@@ -1,0 +1,28 @@
+.lab_main_container {
+  background-color: #f8fbff;
+}
+.report-card-main-section {
+  padding-top: 80px;
+}
+.report-card-main-container {
+  padding: 16px;
+}
+
+.report-card-inner-container {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  height: 400px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 16px;
+  padding-top: 20px;
+  border: 1px solid rgb(226, 226, 226);
+}
+
+.report-container-bottom {
+  margin-bottom: 200px;
+}

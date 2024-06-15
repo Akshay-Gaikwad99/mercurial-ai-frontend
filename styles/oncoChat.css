@@ -1,0 +1,761 @@
+.OncoChatTopBar-main-container {
+  background: #f8fbff;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  align-items: center;
+  z-index: 9999 !important;
+  position: relative;
+}
+
+.oncoChat-back-button {
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.oncoChat_display_image_container {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: black;
+}
+
+.oncoChat_display_image_container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.oncoChat_display_text_container h1 {
+  color: #11245b;
+  text-align: center;
+  font-family: "Inter", sans-serif !important;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 707px) {
+  .onCoChat-footer-button-container {
+    margin-right: 0px;
+  }
+
+  .oncoChat-main-12 {
+    padding: 0%;
+  }
+
+  .OncoChatBody-main-container {
+    background: #fff;
+    width: 100%;
+    height: calc(100vh - 100px);
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-top: 130px;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 3267px) {
+  .onCoChat-footer-button-container {
+    margin-right: 20px;
+  }
+
+  .OncoChatTopFooter-main-container {
+    width: 100% !important;
+  }
+
+  .OncoChatBody-main-container {
+    background: #fff;
+    width: 100%;
+    height: calc(100vh - 0px);
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-top: 100px !important;
+  }
+}
+
+.OncoChatTopFooter-main-container {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  padding: 16px;
+  background: #f8fbff;
+  z-index: 999;
+  box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden !important;
+  touch-action: manipulation !important;
+}
+
+.OncoChatTopFooter-input-container {
+  width: 80%;
+}
+
+.OncoChatTopFooter-input::-webkit-scrollbar {
+  display: none;
+}
+
+.OncoChatTopFooter-image-container {
+  width: 48px;
+  height: 48px;
+  border-radius: 40px;
+  background: #11245b;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-left: 20px;
+  margin-top: 0px;
+  padding-right: 5px;
+}
+
+.OncoChatBody-main-container::-webkit-scrollbar {
+  display: none;
+}
+
+.OncoChatBody-inner-colored-avatar {
+  background-color: #586dd9;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.OncoChatBody-inner-colored-avatar i {
+  color: white;
+}
+
+.OncoChatBody-inner-container {
+  background: #fff;
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 16px;
+}
+
+.OncoChatBody-inner-container span {
+  margin: 0%;
+  margin-left: 10px;
+  color: #000;
+  font-family: "Inter", sans-serif !important;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.OncoChatBody-user-chat {
+  display: flex;
+  padding: 16px 24px 16px 16px;
+  float: right !important;
+  justify-content: flex-end;
+  background: #f4f6f8;
+  width: 100%;
+}
+
+.OncoChatBody-user-chat span {
+  margin: 0%;
+  text-align: right;
+  margin-right: 10px;
+  color: #000;
+  font-family: "Inter", sans-serif !important;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.OncoChatBody-inner-colored-avatar-image-container {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.OncoChatBody-inner-colored-avatar-image-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 0px;
+}
+
+.chat-bubble {
+  background-color: #e6f8f1;
+  padding: 16px 28px;
+  -webkit-border-radius: 20px;
+  -webkit-border-bottom-left-radius: 2px;
+  -moz-border-radius: 20px;
+  -moz-border-radius-bottomleft: 2px;
+  border-radius: 20px;
+  border-bottom-left-radius: 2px;
+  display: inline-block;
+}
+
+.typing {
+  align-items: center;
+  display: flex;
+  height: 17px;
+  margin-top: 15px;
+}
+
+.typing .dot {
+  animation: mercuryTypingAnimation 1.8s infinite ease-in-out;
+  background-color: #002aff;
+  border-radius: 50%;
+  height: 7px;
+  margin-right: 4px;
+  vertical-align: middle;
+  width: 7px;
+  display: inline-block;
+}
+
+.typing .dot:nth-child(1) {
+  animation-delay: 200ms;
+}
+
+.typing .dot:nth-child(2) {
+  animation-delay: 300ms;
+}
+
+.typing .dot:nth-child(3) {
+  animation-delay: 400ms;
+}
+
+.typing .dot:last-child {
+  margin-right: 0;
+}
+
+@keyframes mercuryTypingAnimation {
+  0% {
+    transform: translateY(0px);
+    background-color: #002aff;
+  }
+
+  28% {
+    transform: translateY(-7px);
+    background-color: #304fe8;
+  }
+
+  100% {
+    transform: translateY(0px);
+    background-color: #6478db;
+  }
+}
+
+.suggested-questions-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.suggested-question-chip {
+  background-color: #f0f0f0;
+  border-radius: 16px;
+  padding: 8px 4px 8px 16px;
+  cursor: pointer;
+  font-size: 10px;
+  margin-bottom: 10px;
+  width: auto;
+  margin: 10px 0px 10px 10px;
+
+}
+
+.suggested-question-chip:hover {
+  background-color: #e0e0e0;
+
+}
+
+@media only screen and (min-width: 0px) and (max-width: 707px) {
+  .treatment-main-12 {
+    padding: 0%;
+  }
+
+  .treatment-main-container {
+    position: fixed;
+    z-index: 9999;
+    top: 0%;
+    left: 0%;
+  }
+}
+
+.oncochat-outer-container {
+  background: #f8fbff;
+  position: fixed;
+  width: 100%;
+  height: 107px;
+  padding: 0px 16px;
+  margin: 0%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.oncochat-main-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px 0px 16px;
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 3267px) {
+  .treatment-main-container {
+    width: 100%;
+  }
+
+  .treatmentDiary-main-container {
+    width: 100% !important;
+  }
+
+  .treatmentDiary-body-main-container {
+    height: 100vh;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+  .treatment-main-container {
+    width: 100%;
+  }
+
+  .treatmentDiary-main-container {
+    width: 100% !important;
+  }
+
+  .treatmentDiary-body-main-container {
+    height: 100vh;
+  }
+}
+
+.app-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.header-container {
+  background: #f8fbff;
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  border-bottom: 1px solid #ccc;
+}
+
+.tabs-pannel-container {
+  background: #f8fbff;
+  border-bottom: 1px solid rgba(0, 0, 255, 0.046);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  margin-top: 4rem;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  background: white;
+  height: 48px;
+}
+
+.header-container-title {
+  flex: 1;
+  text-align: center;
+}
+
+.header-container-title h1 {
+  color: #11245b;
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.sidebar-toggle-button {
+  height: auto;
+  width: auto;
+  padding: 5px 10px;
+  background-color: transparent;
+  position: absolute;
+  left: 10px;
+}
+
+.toggle-icon {
+  height: 20px;
+  width: 20px;
+  filter: invert(1);
+}
+
+.toggle-icon-1 {
+  height: 20px;
+  width: 20px;
+}
+
+.sidebar-container {
+  background: #11245b;
+  width: 20%;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-100%);
+}
+
+.sidebar-container.visible {
+  transform: translateX(0);
+}
+
+.overlay-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.content-container {
+  background: #ffffff;
+  width: 80%;
+}
+
+.sidebar-header {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-icon {
+  height: 20px;
+  width: 20px;
+  filter: invert(1);
+}
+
+.chats-outer-container {
+  margin: 10px 0px 20px 0;
+  padding: 0 20px;
+}
+
+.chats-single-container {
+  height: 40px;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.active-chat {
+  background-color: #e1ecfa;
+  height: 50px;
+}
+
+.chats-text-container p {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.OncoChatTopFooter-main-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px;
+  background: #f8fbff;
+  z-index: 999;
+  box-shadow: 0 -5px 5px rgba(0, 0, 0, .1);
+  overflow: hidden !important;
+  touch-action: manipulation !important;
+}
+
+.OncoChatTopFooter-input {
+  max-height: 200px;
+  min-height: 0;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 15px;
+  resize: none;
+  overflow: hidden;
+  border-radius: 40px;
+  border: 1px solid rgb(201, 201, 201);
+  background: rgb(255, 255, 255);
+  padding: 20px 10px 0 20px;
+  outline: none;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  text-align: start;
+  height: 70px;
+}
+
+.OncoChatTopFooter-image-container {
+  width: 48px;
+  height: 48px;
+  border-radius: 40px;
+  background: #11245b;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-left: 20px;
+  margin-top: 0;
+  padding-right: 10px;
+}
+
+@media (min-width: 767px) {
+  .app-container {
+    flex-direction: row;
+  }
+
+  .sidebar-container {
+    transform: translateX(0);
+    width: 20%;
+  }
+
+  .content-container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+  }
+
+  .sidebar-container {
+    position: fixed;
+    width: 80%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 9999;
+    transform: translateX(-100%);
+  }
+
+  .sidebar-container.visible {
+    transform: translateX(0);
+  }
+
+  .content-container {
+    width: 100%;
+  }
+}
+
+.user-message-container {
+  background: #fff;
+  width: 100%;
+  height: auto;
+  display: flex;
+  text-align: right;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.user-message-container p {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.assistant-message-container {
+  display: flex;
+  padding: 20px;
+  float: right !important;
+  justify-content: flex-end;
+  background: #f4f6f8;
+  width: 100%;
+}
+
+.suggestion-container {
+  padding: 20px;
+  background: #f4f6f8;
+  width: 100%;
+  padding-bottom: 100px;
+}
+
+.messages-container {
+  padding-bottom: 0px;
+  margin-top: 7rem;
+}
+
+.user-message-container,
+.assistant-message-container {
+  display: flex;
+  align-items: center;
+}
+
+.user-message {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.user-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.assistant-message {
+  display: flex;
+  margin-right: auto;
+}
+
+.assistant-message p {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.OncoChatBody-inner-colored-avatar {
+  background-color: #11245b;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.fa-robot {
+  font-size: 18px;
+  color: white;
+}
+
+.suggestion-container h5 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.suggested-question-chip {
+  background-color: #bac5ff21;
+  border-radius: 16px;
+  padding: 15px 4px 15px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  width: auto;
+  margin: 5px 0 10px 0;
+  text-align: left;
+  align-items: center;
+  display: flex;
+
+}
+
+.suggested-question-chip p {
+  margin-bottom: 0;
+}
+
+
+
+.left-sidebar-title-container {
+  margin: 20px 20px 10px 0;
+  padding: 0 20px;
+}
+
+.left-sidebar-title-container h6 {
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+}
+
+.suggestion-container-one li {
+  background-color: #bac5ff2a;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.suggestion-container-one ol li {
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 14px;
+  padding-left: 0px;
+}
+
+.OncoChatBody-search-avatar {
+  background-color: #11245b;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.assistant-message h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+.divider {
+  margin: 1.5rem 0 0 0;
+}
+
+.menu-container {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: -5px;
+  top: 30px;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-size: 14px;
+}
+
+.dropdown-item {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+.down-arrow-fixed {
+  position: fixed;
+  right: 20px;
+  bottom: 150px;
+}
+
+.down-arrow-container {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: #11245b;
+  cursor: pointer;
+}

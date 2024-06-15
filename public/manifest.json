@@ -1,0 +1,212 @@
+{
+  "display_override": ["window-controls-overlay"],
+  "name": "CarePilot",
+  "short_name": "CarePilot",
+  "description": "CarePilot by Mercurial AI",
+  "id": "/app.com.health.mercurial-ai",
+  "start_url": "/",
+  "scope": "/",
+  "scope_extensions": [
+    {
+      "origin": "adi://app",
+      "path": "id",
+      "behavior": "navigate"
+    }
+  ],
+  "display": "fullscreen",
+  "theme_color": "#4285f4",
+  "orientation": "portrait",
+  "dir": "ltr",
+  "lang": "en-US",
+  "launch_handler": {
+    "client_mode": "navigate-existing",
+    "path": "/index.html",
+    "httpMethod": "GET",
+    "navigateRemoteURLs": true
+  },
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "background_color": "#FFFFFF",
+  "screenshots": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "iarc_rating_id": "e84b072d-71b3-4d3e-86ae-31a8ce4e53b7",
+  "categories": ["health", "fitness"],
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.mercurial-ai.health",
+      "id": "com.mercurial-ai.health"
+    }
+  ],
+  "prefer_related_applications": false,
+  "protocol_handlers": [
+    {
+      "protocol": "web+health",
+      "url": "https://mercurial-ai-next.vercel.app/treatment"
+    }
+  ],
+  "periodic_background_sync": {
+    "service_worker": "/bg-sync-sw.js",
+    "interval": 24,
+    "persistence": true
+  },
+  "background_fetch": {
+    "name": "latest-news",
+    "title": "Download Latest News",
+    "icons": [
+      {
+        "src": "/icon-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "any"
+      },
+      {
+        "src": "/icon-256x256.png",
+        "sizes": "256x256",
+        "type": "image/png",
+        "purpose": "maskable"
+      },
+      {
+        "src": "/icon-384x384.png",
+        "sizes": "384x384",
+        "type": "image/png",
+        "purpose": "maskable"
+      },
+      {
+        "src": "/icon-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "maskable"
+      }
+    ],
+    "downloadTotal": 10
+  },
+  "push_notification": {
+    "applicationServerKey": "BG3Oa...",
+    "pushSubscriptionId": "web..."
+  },
+  "share_target": {
+    "action": "/share",
+    "method": "GET",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    },
+    "enctype": "application/x-www-form-urlencoded"
+  },
+  "file_handlers": [
+    {
+      "action": "/view-report",
+      "accept": {
+        "application/pdf": [".pdf"],
+        "image/jpeg": [".jpg", ".jpeg"]
+      }
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "mercurial-ai",
+      "short_name": "mercurial-ai",
+      "description": "A mercurial-ai App",
+      "url": "/bmi/",
+      "icons": [
+        {
+          "src": "/icon-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        },
+        {
+          "src": "/icon-256x256.png",
+          "sizes": "256x256",
+          "type": "image/png",
+          "purpose": "maskable"
+        },
+        {
+          "src": "/icon-384x384.png",
+          "sizes": "384x384",
+          "type": "image/png"
+        },
+        {
+          "src": "/icon-512x512.png",
+          "sizes": "512x512",
+          "type": "image/png",
+          "purpose": "maskable"
+        }
+      ]
+    }
+  ],
+  "Transform": "AWS::Serverless-2016-10-31",
+  "Resources": {
+    "Api": {
+      "Type": "AWS::Serverless::Api",
+      "Properties": {
+        "Name": {
+          "Fn::Sub": [
+            "${ResourceName} From Stack ${AWS::StackName}",
+            {
+              "ResourceName": "Api"
+            }
+          ]
+        },
+        "StageName": "Prod",
+        "DefinitionBody": {
+          "openapi": "3.0",
+          "info": {},
+          "paths": {
+            "/": {
+              "get": {
+                "responses": {}
+              }
+            }
+          }
+        },
+        "EndpointConfiguration": "REGIONAL",
+        "TracingEnabled": true
+      }
+    }
+  }
+}
